@@ -1,0 +1,10 @@
+{
+    "github.codespaces.defaultExtensions": [
+        "GitHub.codespaces",
+        "GitHub.vscode-pull-request-github",
+        "github.copilot-nightly",
+        "ms-python.python",
+        "ms-vscode.vscode-typescript-next",
+        "bungcip.better-toml"
+    ],
+}

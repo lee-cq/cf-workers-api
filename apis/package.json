@@ -1,0 +1,23 @@
+{
+  "name": "cf-leecq-apis",
+  "version": "0.0.1",
+  "author": {
+    "name": "Lee CQ",
+    "email": "lee-cq@qq.com"
+  },
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "start": "wrangler dev",
+    "build": "worktop build src/worker.js"
+  },
+  "dependencies": {
+    "worktop": "^0.7.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230419.0",
+    "typescript": "^5.0.4",
+    "worktop.build": "^0.0.5",
+    "wrangler": "^3.0.0"
+  }
+}
