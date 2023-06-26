@@ -8,16 +8,20 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
-import { Router, listen } from "worktop";
+import { Router, listen } from 'worktop';
+import { send_mail } from './mail/index.js';
+import { httpdns } from './resolve/index.js';
 
 const router = new Router()
 
-router.add("GET", "/", async (_request, response) => {
-	response.send(200, "ok apis.");
-});
+async function api_index(request, response) {
+  response.send(200, "ok apis.");
+}
 
-router.add("GET", "/", async (_request, response) => {
-    response.send(200, "Hello, Cloudflare, Hello worktop!");
-  });
-  
-listen(router.run());
+router.add("GET", "/", api_index);
+
+router.add("POST", '/mail/send', send_mail);
+
+router.add("GET", '/httpdns/d', httpdns);
+
+listen(router.run);

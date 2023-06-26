@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
-    "start": "wrangler dev",
+    "start": "wrangler dev --remote",
     "build": "worktop build src/worker.js"
   },
   "dependencies": {

@@ -5,6 +5,7 @@
         "github.copilot-nightly",
         "ms-python.python",
         "ms-vscode.vscode-typescript-next",
-        "bungcip.better-toml"
+        "bungcip.better-toml",
+        "ms-ceintl.vscode-language-pack-zh-hans"
     ],
 }
